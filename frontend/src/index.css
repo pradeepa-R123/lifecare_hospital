@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700;800&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', 'Segoe UI', sans-serif; background: #F1F5F9; color: #1E293B; }
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #F1F5F9; }
+::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+
+@keyframes fadeIn  { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+@keyframes slideUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+@keyframes pulse   { 0%,100%{transform:scale(1);} 50%{transform:scale(1.05);} }
+@keyframes bounce  { 0%,80%,100%{transform:translateY(0);} 40%{transform:translateY(-6px);} }
+@keyframes marquee { from{transform:translateX(100%);} to{transform:translateX(-100%);} }
+@keyframes float   { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-12px);} }
+@keyframes heroFade{ from{opacity:0;transform:translateY(20px);} to{opacity:1;transform:translateY(0);} }
+@keyframes chatPop { from{opacity:0;transform:scale(.8) translateY(20px);} to{opacity:1;transform:scale(1) translateY(0);} }
+@keyframes msgIn   { from{opacity:0;transform:translateX(-10px);} to{opacity:1;transform:translateX(0);} }
+@keyframes msgInR  { from{opacity:0;transform:translateX(10px);} to{opacity:1;transform:translateX(0);} }
