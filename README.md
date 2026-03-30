@@ -164,7 +164,7 @@ BLOODBANK_PIN=9012
 | Doctor (Neurology) | ramesh@lifecare.com | Doctor@123 |
 | Doctor (Orthopedics) | meena@lifecare.com | Doctor@123 |
 | Doctor (Emergency) | suresh@lifecare.com | Doctor@123 |
-| Doctor (Pediatrics) | priya@lifecare.com | Doctor@123 |
+| Doctor (General Physician) | priya@lifecare.com | Doctor@123 |
 | Receptionist | maran@lifecare.com | Staff@123 |
 | Staff | nursepriya@lifecare.com | Staff@123 |
 

@@ -1,4 +1,4 @@
-
+// backend/models/Patient.js
 const mongoose = require("mongoose");
 
 const PatientSchema = new mongoose.Schema({
@@ -17,7 +17,15 @@ const PatientSchema = new mongoose.Schema({
 
   status: {
     type: String,
-    enum: ["Waiting", "Admitted", "Surgery Scheduled"],
+    enum: [
+      "Waiting",
+      "Vitals ",
+      "In Consultation",
+      "Admitted",
+      "Surgery Scheduled",
+      "Completed",
+      "Discharged"
+    ],
     default: "Waiting",
   },
 
@@ -31,7 +39,7 @@ const PatientSchema = new mongoose.Schema({
 PatientSchema.pre("save", async function (next) {
   if (!this.patientId) {
     const n = await mongoose.model("Patient").countDocuments();
-    this.patientId = "LC-" + new Date().getFullYear() + "-" + String(n + 1).padStart(3, "0");
+    this.patientId = "HC-" + new Date().getFullYear() + "-" + String(n + 1).padStart(3, "0");
   }
   next();
 });

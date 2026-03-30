@@ -12,7 +12,7 @@ const DEPTS = [
   { name:"Neurology",    icon:"🧠",  desc:"Brain & nervous system disorders", doctor:"Dr. Ramesh" },
   { name:"Orthopedics",  icon:"🦴",  desc:"Bone, joint & spine surgery",      doctor:"Dr. Meena" },
   { name:"Emergency",    icon:"🚨",  desc:"24/7 critical & trauma care",      doctor:"Dr. Suresh" },
-  { name:"Pediatrics",   icon:"👶",  desc:"Child & infant healthcare",        doctor:"Dr. Priya" },
+  { name:"General Physician", icon:"🩺",  desc:"General health & primary care",    doctor:"Dr. Priya" },
 ];
 
 const DOCTORS = [
@@ -20,7 +20,7 @@ const DOCTORS = [
   { name:"Dr. Ramesh", dept:"Neurology",   spec:"Neurosurgery",                exp:"11 yrs", edu:"MBBS, DM — CMC Vellore" },
   { name:"Dr. Meena",  dept:"Orthopedics", spec:"Joint Replacement Surgery",   exp:"10 yrs", edu:"MBBS, MS — JIPMER" },
   { name:"Dr. Suresh", dept:"Emergency",   spec:"Emergency & Trauma Medicine", exp:"8 yrs",  edu:"MBBS, MD — Madras Medical" },
-  { name:"Dr. Priya",  dept:"Pediatrics",  spec:"Pediatric Surgery",           exp:"7 yrs",  edu:"MBBS, DCH — SRMC Chennai" },
+    { name:"Dr. Priya",  dept:"General Physician",  spec:"General Medicine & Primary Care", exp:"7 yrs", edu:"MBBS, DCH — SRMC Chennai" },
 ];
 
 function Footer() {
@@ -100,7 +100,7 @@ function HomeSection() {
               Advanced Care,<br/><span style={{color:G.red}}>Compassionate</span><br/>Healing
             </h1>
             <p style={{color:"rgba(255,255,255,.58)",fontSize:14.5,lineHeight:1.8,marginBottom:26,maxWidth:440}}>
-              Chennai's trusted multi-specialty hospital with expert doctors across Cardiology, Neurology, Orthopedics, Emergency, and Pediatrics.
+              Chennai's trusted multi-specialty hospital with expert doctors across Cardiology, Neurology, Orthopedics, Emergency, and General Physician
             </p>
             {/* ✅ navigate("/login") instead of onEnterPortal() */}
             <button onClick={() => navigate("/login")} style={{ padding:"12px 28px", background:G.red, color:"white", border:"none", borderRadius:10, fontSize:14, fontWeight:700, cursor:"pointer" }}>

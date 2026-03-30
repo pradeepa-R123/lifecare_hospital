@@ -1,6 +1,5 @@
 import { useEffect, useRef, useCallback } from "react";
-
-const WS_URL = `ws://${window.location.host}`;
+const WS_URL = `ws://${window.location.hostname}:5001`;
 
 export const useWebSocket = (onMessage) => {
   const wsRef    = useRef(null);

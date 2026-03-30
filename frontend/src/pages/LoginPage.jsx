@@ -6,13 +6,13 @@ const G = { navy:"#0B1F3A",navyD:"#071429",red:"#C8102E",redL:"#FFF0F2",white:"#
 const i = (e={})=>({width:"100%",padding:"10px 14px",border:`1.5px solid ${G.border}`,borderRadius:9,fontSize:13.5,fontFamily:"'DM Sans',sans-serif",outline:"none",background:G.white,color:G.text,...e});
 
 const DEMOS=[
-  {role:"Doctor",      email:"ravi@lifecare.com",      password:"Doctor@123", label:"Dr. Ravi",      sub:"Cardiology"},
-  {role:"Doctor",      email:"ramesh@lifecare.com",    password:"Doctor@123", label:"Dr. Ramesh",    sub:"Neurology"},
-  {role:"Doctor",      email:"meena@lifecare.com",     password:"Doctor@123", label:"Dr. Meena",     sub:"Orthopedics"},
-  {role:"Doctor",      email:"suresh@lifecare.com",    password:"Doctor@123", label:"Dr. Suresh",    sub:"Emergency"},
-  {role:"Doctor",      email:"priya@lifecare.com",     password:"Doctor@123", label:"Dr. Priya",     sub:"Pediatrics"},
-  {role:"Receptionist",email:"maran@lifecare.com",     password:"Staff@123",  label:"Maran",         sub:"Receptionist"},
-  {role:"Staff",       email:"nursepriya@lifecare.com",password:"Staff@123",  label:"Nurse Priya",   sub:"Staff"},
+  {role:"Doctor",      email:"ravi@lifecare.com",      password:"Doctor@123", label:"Dr. Ravi",   sub:"Cardiology"},
+  {role:"Doctor",      email:"ramesh@lifecare.com",    password:"Doctor@123", label:"Dr. Ramesh", sub:"Neurology"},
+  {role:"Doctor",      email:"meena@lifecare.com",     password:"Doctor@123", label:"Dr. Meena",  sub:"Orthopedics"},
+  {role:"Doctor",      email:"suresh@lifecare.com",    password:"Doctor@123", label:"Dr. Suresh", sub:"Emergency"},
+  {role:"Doctor",      email:"priya@lifecare.com",     password:"Doctor@123", label:"Dr. Priya",  sub:"General Physician"}, // ✅ was "Pediatrics"
+  {role:"Receptionist",email:"maran@lifecare.com",     password:"Staff@123",  label:"Maran",      sub:"Receptionist"},
+  {role:"Staff",       email:"nursepriya@lifecare.com",password:"Staff@123",  label:"Staff Priya",sub:"Staff"},              // ✅ was "Nurse Priya"
 ];
 
 export default function LoginPage() {
